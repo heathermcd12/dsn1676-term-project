@@ -1,0 +1,71 @@
+html {
+     box-sizing: border-box;
+}
+
+*, *::before, *::after {
+}
+
+body {
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+.fox {
+    position:absolute;
+    top: 125px;
+    left: calc(50% - 160px);
+    width: 320px;  
+    height: 400px;
+    background-image: url(../images/fox-face.svg);
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-animation: fox 4s linear forwards;
+    animation: fox 4s linear forwards;
+}
+
+.fox:hover{
+    background-image: url(../images/fox-eyes.svg);
+}
+
+@keyframes fox {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fox {
+     0% {
+         -webkit-opacity: 0;
+     }
+    
+    100% {
+        -webkit-opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    animation: title 2s linear forwards;  
+}
+
+@keyframes title {
+    0% {
+        color: black;
+    }
+    
+    100% {
+        color: red;
+    }
+}
+
+.p {
+    text-align: center;
+    top: 400px;
+}
+    
+
