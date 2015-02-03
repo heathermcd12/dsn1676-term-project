@@ -11,6 +11,11 @@ body {
     overflow: hidden;
 }
 
+.fox-wrap {
+    position: relative;
+    height: 500px;
+}
+
 .fox {
     position:absolute;
     top: 125px;
@@ -116,4 +121,29 @@ main {
     .logo {
         max-width: 800px; 
     }
+}
+
+.button {
+    text-align: center;
+}
+
+.btn {
+    margin: 1.5rem;
+    border-radius: 50%;
+    line-height: 6em;
+    width: 6em;
+    display:inline-block;
+    text-decoration:none;
+    font-family: arial, serif;
+}
+
+.btn-forwards {
+    background-color: red;
+    color: #fff;   
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    transition: all 500ms linear;
 }
