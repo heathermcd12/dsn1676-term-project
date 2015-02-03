@@ -15,20 +15,23 @@ body {
     position:absolute;
     top: 125px;
     left: calc(50% - 160px);
-    width: 320px;  
-    height: 400px;
-    background-image: url(../images/fox-face.svg);
+    width: 402px;  
+    height: 420px;
+    background-image: url(../images/fox.svg);
     background-repeat: no-repeat;
+    background-size: 402px 1260px;
+    background-position: center top;
     opacity: 0;
     -webkit-animation: fox 4s linear forwards;
     animation: fox 4s linear forwards;
+    transition: all .25s steps(2);
 }
 
 .fox:hover{
-    background-image: url(../images/fox-eyes.svg);
+    background-position: center bottom;
 }
 
-@keyframes fox {
+@keyframes fox { 
     0% {
         opacity: 0;
     }
@@ -48,10 +51,33 @@ body {
     }
 }
 
-h1 {
-    text-align: center;
-    animation: title 2s linear forwards;  
+.logo {
+
+    display: block;
+    max-width: 400px;
+    margin: -2rem auto 0;
 }
+
+.btn {
+    margin: 1.5rem;
+    border-radius: 50%;
+    line-height: 6em;
+    width: 6em;
+    display:inline-block;
+    text-decoration:none;
+    font-family: arial, serif;
+}
+
+.btn-down {
+    background-color: 9D7C37;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    transition: all 500ms linear;
+}
+
 
 @keyframes title {
     0% {
@@ -63,9 +89,36 @@ h1 {
     }
 }
 
-.p {
-    text-align: center;
-    top: 400px;
+@media only screen and (min-width: 35em) {
+
+    
+    .logo {
+        max-width: 400px; 
+    }
 }
     
+@media only screen and (min-width: 60em) {
+ 
+    html {
+        font-size:110%;
+    }
+    
+    .logo {
+        max-width: 500px; 
+    }
+}
 
+@media only screen and (min-width: 90em) {
+ 
+    html {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 120em) {
+    
+    html {
+        font-size: 130%;
+    }
+ 
+}
