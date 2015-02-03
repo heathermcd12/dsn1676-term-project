@@ -51,6 +51,10 @@ body {
     }
 }
 
+main {
+    text-align: center;
+}
+
 .logo {
 
     display: block;
@@ -59,22 +63,12 @@ body {
 }
 
 .btn {
-    margin: 1.5rem;
-    border-radius: 50%;
-    line-height: 6em;
-    width: 6em;
-    display:inline-block;
-    text-decoration:none;
-    font-family: arial, serif;
-}
-
-.btn-down {
-    background-color: 9D7C37;
+    background-image: url(../images/cat-button.svg);
+    background-repeat: no-repeat;
 }
 
 .btn:hover {
     color: black;
-    background-color: white;
     transition: all 500ms linear;
 }
 
@@ -113,6 +107,10 @@ body {
     html {
         font-size: 120%;
     }
+    
+    .logo {
+        max-width: 600px; 
+    }
 }
 
 @media only screen and (min-width: 120em) {
@@ -121,4 +119,7 @@ body {
         font-size: 130%;
     }
  
+    .logo {
+        max-width: 800px; 
+    }
 }
