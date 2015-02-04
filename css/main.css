@@ -18,11 +18,11 @@ body {
 
 .fox {
     position:absolute;
-    top: 125px;
+    top: 175px;
     left: calc(50% - 201px);
     width: 402px;  
     height: 420px;
-    background-image: url(../images/fox.svg);
+    background-image: url(../image/fox.svg);
     background-repeat: no-repeat;
     background-size: 402px 1260px;
     background-position: center top;
@@ -63,7 +63,7 @@ main {
 .logo {
 
     display: block;
-    max-width: 400px;
+    max-width: 350px;
     margin: -2rem auto 0;
     opacity: 0;
     -webkit-animation: fox 4s linear forwards;
@@ -88,6 +88,7 @@ main {
     .logo {
         max-width: 400px; 
     }
+
 }
     
 @media only screen and (min-width: 60em) {
@@ -99,6 +100,7 @@ main {
     .logo {
         max-width: 500px; 
     }
+  
 }
 
 @media only screen and (min-width: 90em) {
@@ -110,6 +112,7 @@ main {
     .logo {
         max-width: 600px; 
     }
+   
 }
 
 @media only screen and (min-width: 120em) {
@@ -121,14 +124,18 @@ main {
     .logo {
         max-width: 800px; 
     }
+
 }
 
 .button {
     text-align: center;
+    display: block;
+    height: 150px;
+    width: 150px;
+    position: relative; 
 }
 
 .btn {
-    margin: 1.5rem;
     border-radius: 50%;
     line-height: 6em;
     width: 6em;
