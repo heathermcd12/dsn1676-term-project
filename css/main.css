@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    position: relative;
     margin: 0;
     padding:0;
     overflow: hidden;
@@ -127,18 +128,18 @@ body {
 /* button */
 
 .button {
-    position: center bottom;
+    
     display: block;
     height: 150px;
     width: 150px;
+    bottom: 0;
 }
 
 .btn {
     line-height: 1em;
     width: 6em;
     display:inline-block;
-    text-decoration:none;
-    font-family: arial, serif;
+    bottom: 0;
 }
 
 .btn-forwards {
