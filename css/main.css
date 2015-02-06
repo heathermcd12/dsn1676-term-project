@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding:0;
     overflow: hidden;
+    height:100vh
 }
 
 .logo {
@@ -128,27 +129,24 @@ body {
 /* button */
 
 .button {
-    
-    display: block;
-    height: 150px;
-    width: 150px;
+    position:absolute;
+    left: calc(50%-150px);
     bottom: 0;
+    width: 100%;
 }
 
 .btn {
-    line-height: 1em;
-    width: 6em;
+    position: absolute;
+    left:50%;
+    margin-right: -50%;
+    height: 150px;
+    width: 150px;
     display:inline-block;
     bottom: 0;
 }
 
-.btn-forwards {
-    background-color: red;
-    color: #fff;   
-}
-
 .btn:hover {
     color: black;
-    background-color: white;
+    background-color: red;
     transition: all 500ms linear;
 }
