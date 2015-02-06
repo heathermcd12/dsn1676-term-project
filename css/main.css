@@ -10,7 +10,8 @@ body {
     margin: 0;
     padding:0;
     overflow: hidden;
-    height:100vh
+    height:100vh;
+    background-color: #F4F4F4;
 }
 
 .logo {
@@ -93,7 +94,6 @@ body {
     width: 402px;  
     height: 420px;
     background-image: url(../images/fox.svg);
-    background-repeat: no-repeat;
     background-size: 402px 1260px;
     background-position: center top;
     opacity: 0;
@@ -101,6 +101,8 @@ body {
     animation: fox 4s linear forwards;
     transition: all .25s steps(2);
 }
+
+
 
 .fox:hover{
     background-position: center bottom;
@@ -130,17 +132,18 @@ body {
 
 .button {
     position:absolute;
-    left: calc(50%-150px);
+    left: calc(50%-75px);
     bottom: 0;
     width: 100%;
 }
 
 .btn {
     position: absolute;
-    left:50%;
-    margin-right: -50%;
-    height: 150px;
-    width: 150px;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    line-height: .5em;
+    margin: 0;
+    width: 100px;
     display:inline-block;
     bottom: 0;
 }
