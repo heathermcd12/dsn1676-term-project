@@ -11,55 +11,6 @@ body {
     overflow: hidden;
 }
 
-.fox-wrap {
-    position: relative;
-    height: 500px;
-}
-
-.fox {
-    position:absolute;
-    top: 175px;
-    left: calc(50% - 201px);
-    width: 402px;  
-    height: 420px;
-    background-image: url(../image/fox.svg);
-    background-repeat: no-repeat;
-    background-size: 402px 1260px;
-    background-position: center top;
-    opacity: 0;
-    -webkit-animation: fox 4s linear forwards;
-    animation: fox 4s linear forwards;
-    transition: all .25s steps(2);
-}
-
-.fox:hover{
-    background-position: center bottom;
-}
-
-@keyframes fox { 
-    0% {
-        opacity: 0;
-    }
-    
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fox {
-     0% {
-         -webkit-opacity: 0;
-     }
-    
-    100% {
-        -webkit-opacity: 1;
-    }
-}
-
-main {
-    text-align: center;
-}
-
 .logo {
 
     display: block;
@@ -124,20 +75,66 @@ main {
     .logo {
         max-width: 800px; 
     }
-
 }
 
+/*FOX STUFF */
+
+.fox-wrap {
+    position: relative;
+    height: 500px;
+}
+
+.fox {
+    position:absolute;
+    top: 175px;
+    left: calc(50% - 201px);
+    width: 402px;  
+    height: 420px;
+    background-image: url(../images/fox.svg);
+    background-repeat: no-repeat;
+    background-size: 402px 1260px;
+    background-position: center top;
+    opacity: 0;
+    -webkit-animation: fox 4s linear forwards;
+    animation: fox 4s linear forwards;
+    transition: all .25s steps(2);
+}
+
+.fox:hover{
+    background-position: center bottom;
+}
+
+@keyframes fox { 
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fox {
+     0% {
+         -webkit-opacity: 0;
+     }
+    
+    100% {
+        -webkit-opacity: 1;
+    }
+}
+
+/* button */
+
 .button {
-    text-align: center;
+    position: center bottom;
     display: block;
     height: 150px;
     width: 150px;
-    position: relative; 
 }
 
 .btn {
-    border-radius: 50%;
-    line-height: 6em;
+    line-height: 1em;
     width: 6em;
     display:inline-block;
     text-decoration:none;
