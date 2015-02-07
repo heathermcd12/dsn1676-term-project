@@ -91,10 +91,10 @@ body {
     position:absolute;
     top: 175px;
     left: calc(50% - 201px);
-    width: 402px;  
-    height: 420px;
+    width: 320px;  
+    height: 335px;
     background-image: url(../images/fox.svg);
-    background-size: 402px 1260px;
+    background-size: 320px 1260px;
     background-position: center top;
     opacity: 0;
     -webkit-animation: fox 4s linear forwards;
@@ -103,11 +103,6 @@ body {
 }
 
 @media only screen and (min-width: 35em) {
-
-    
-    .fox {
-        width: -20%; 
-    }
 
 }
     
