@@ -192,7 +192,7 @@ ul {
 
     
     .logo {
-        max-width: 400px; 
+        max-width: 420px; 
     }
     
     .nav-top {
@@ -226,12 +226,12 @@ ul {
     }
     
     .logo {
-        max-width: 600px; 
+        max-width: 600px;
     }
     
     .nav-top {
         text-align: right;
-        padding-right: 2.5em;
+        padding-right: 2em;
     }
    
 }
