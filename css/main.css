@@ -194,6 +194,10 @@ ul {
     .logo {
         max-width: 400px; 
     }
+    
+    .nav-top {
+        text-align: right;
+    }
 
 }
     
@@ -251,47 +255,6 @@ ul {
     animation: fox 4s linear forwards;
     transition: all .25s steps(2);
 }
-/*
-@media only screen and (min-width: 35em) {
-
-}
-    
-@media only screen and (min-width: 60em) {
- 
-    html {
-        font-size:110%;
-    }
-    
-    .logo {
-        max-width: 500px; 
-    }
-  
-}
-
-@media only screen and (min-width: 90em) {
- 
-    html {
-        font-size: 120%;
-    }
-    
-    .logo {
-        max-width: 600px; 
-    }
-   
-}
-
-@media only screen and (min-width: 120em) {
-    
-    html {
-        font-size: 130%;
-    }
- 
-    .logo {
-        max-width: 800px; 
-    }
-}
-
-*/
 
 .fox:hover{
     background-position: center bottom;
@@ -339,6 +302,6 @@ ul {
 
 .btn:hover {
     color: black;
-    background-color: red;
+    background-color: #f22ee8;
     transition: all 500ms linear;
 }
