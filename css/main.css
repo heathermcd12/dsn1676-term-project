@@ -1,3 +1,103 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media only screen and (min-width: 60em) {
+ 
+    html {
+        font-size:110%;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+ 
+    html {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 120em) {
+    
+    html {
+        font-size: 130%;
+    }
+ 
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a:link,
+a:active {
+    /* it is okay to get rid of the focus rectangle for mouse users but NEVER FOR KEYBOARD USERS. THEY NEED THIS!!!!!!!! */
+    
+    outline: none;
+}
+
+.button {
+    position:absolute;
+    left: calc(50%-150px);
+    bottom: 0;
+    width: 100%;
+}
+
+.btn {
+    height: 150px;
+    width: 150px;
+    display:inline-block;
+    bottom: 0;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active,
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited {
+    background-color: #f22ee8;
+    color: #fff;
+}
+
+a:focus {
+    outline: 3px solid #000;
+}
+
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+.skip-links a {
+    position: absolute;
+    top:-3em;
+    padding:0.5em 0.75em;
+    background-color: #000;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.skip-links a:focus {
+    top:0;
+}
+    
+
 html {
      box-sizing: border-box;
 }
@@ -11,8 +111,60 @@ body {
     padding:0;
     overflow: hidden;
     height:100vh;
-    background-color: #F4F4F4;
 }
+
+/* The NAVIGATION */
+
+.masthead {
+    overflow: hidden;
+    display: block;
+    background-color:#f0efe8;
+}
+
+.logo-wrap {
+    text-align:center;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    display: inline-block;    
+}
+
+.logo a {
+    display: block;
+}    
+
+.logo img {
+    height: 2em;
+}
+
+.section-medium {
+  background-color: #e2e2e2;
+}
+
+ul {
+    list-style-type: none;
+} 
+
+.nav-top {
+    text-align: center;
+    text-decoration:none;
+    color: black;
+}
+.nav a {
+    display: block;
+    text-decoration: none;
+}
+.nav {
+    padding: 0;
+}
+
+.nav li {
+    text-decoration:none;
+    display:inline-block;
+    text-align: center;
+    }
 
 .logo {
 
@@ -88,20 +240,18 @@ body {
 }
 
 .fox {
-    position:absolute;
-    top: 175px;
-    left: calc(50% - 201px);
+    margin: auto;
     width: 320px;  
     height: 335px;
     background-image: url(../images/fox.svg);
-    background-size: 320px 1260px;
+    background-size: 320px 1005px;
     background-position: center top;
     opacity: 0;
     -webkit-animation: fox 4s linear forwards;
     animation: fox 4s linear forwards;
     transition: all .25s steps(2);
 }
-
+/*
 @media only screen and (min-width: 35em) {
 
 }
@@ -141,7 +291,7 @@ body {
     }
 }
 
-
+*/
 
 .fox:hover{
     background-position: center bottom;
