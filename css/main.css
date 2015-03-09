@@ -197,6 +197,7 @@ ul {
     
     .nav-top {
         text-align: right;
+        padding-right: 1em;
     }
 
 }
@@ -210,6 +211,11 @@ ul {
     .logo {
         max-width: 500px; 
     }
+    
+    .nav-top {
+        text-align: right;
+        padding-right: 1.5em;
+    }
   
 }
 
@@ -222,6 +228,11 @@ ul {
     .logo {
         max-width: 600px; 
     }
+    
+    .nav-top {
+        text-align: right;
+        padding-right: 2.5em;
+    }
    
 }
 
@@ -233,6 +244,11 @@ ul {
  
     .logo {
         max-width: 800px; 
+    }
+    
+    .nav-top {
+        text-align: right;
+        padding-right: 3em;
     }
 }
 
