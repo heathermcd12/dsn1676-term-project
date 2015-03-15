@@ -296,6 +296,12 @@ ul {
     }
 }
 
+/* About ME */
+
+.js-box-show-hide {
+    opacity: 0; 
+}
+
 /* button */
 
 .button {
@@ -321,4 +327,5 @@ ul {
     background-color: #f22ee8;
     transition: all 500ms linear;
 }
+
 
