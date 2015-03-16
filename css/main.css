@@ -298,17 +298,19 @@ ul {
 /* About ME */
 
 .panel {
-    padding: 1em;
+    margin: 2em;
+    padding: .75em;
     max-height: 0;
     overflow: hidden;
     transition: all 250ms linear;
 }
 
 .js-panel-expand {
-    max-height: 12em;
+    max-height: 15em;
 }
 
 .btn-expand {
+    margin: 1em;
     padding: 1em;
     background-color: white;
     border: 2px solid #424035;
@@ -331,6 +333,7 @@ ul {
     width: 100px;
     height: 100px;
     display:inline-block;
+    bottom: 1em;
 }
 
 .btn:hover {
@@ -359,7 +362,7 @@ ul {
     
 }
 
-.me {
+.portrait {
     width: 100%;
 }
 
