@@ -1,9 +1,8 @@
-var $btnShowHide = $('.btn-show-hide');
-var $text = $('.text');
+var $btnExpand = $('.btn-expand');
+var $panel = $('.panel');
 
-console.log ($text);
+console.log($panel);
 
-$btnShowHide.on('click', function () { //'click' is the action we want the user to do, then the function of rotation will occur
-    $text.toggleClass('js-box-show-hide'); //adding a new class, TOGGLE: switch class on and off
-    
+$btnExpand.on ('click', function () {
+    $panel.toggleClass('js-panel-expand');
 });

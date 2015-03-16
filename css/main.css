@@ -297,21 +297,30 @@ ul {
 }
 
 /* About ME */
-
-.js-box-show-hide {
-    opacity: 0; 
-    left: 200px;
-}
-
-.aboutme {
-    text-align: center;
-}
-
-.text {
+.panel {
+    padding: 1em;
+    max-height: 0;
+    overflow: hidden;
     transition: all 250ms linear;
 }
 
+.js-panel-expand {
+    max-height: 12em;
+}
+
+.btn-expand {
+    padding: 1em;
+    background-color: white;
+    border: 2px solid #424035;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    
+}
+
 /* button */
+
+.about {
+    padding: 1em;
+}
 
 .button {
     position:absolute;
@@ -328,7 +337,7 @@ ul {
     margin: 0;
     width: 100px;
     display:inline-block;
-    bottom: 0;
+    bottom: -5em;
 }
 
 .btn:hover {
