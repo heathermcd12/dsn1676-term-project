@@ -255,7 +255,7 @@ ul {
 
 .fox-wrap {
     position: relative;
-    height: 500px;
+    height: 400px;
 }
 
 .fox {
@@ -299,6 +299,7 @@ ul {
 
 .panel {
     margin: 2em;
+    margin-bottom: 0;
     padding: .75em;
     max-height: 0;
     overflow: hidden;
@@ -321,19 +322,17 @@ ul {
 /* button */
 
 .button {
-    left: calc(50%-75px);
+    text-align: center;
     width: 100%;
+    position:fixed;
 }
 
 .btn {
-    padding-top: 4em;
-    left: calc(50% - 50px);
     border-radius: 50% 50%;
     margin: 0;
     width: 100px;
     height: 100px;
     display:inline-block;
-    bottom: 1em;
 }
 
 .btn:hover {
@@ -342,29 +341,37 @@ ul {
     transition: all 500ms linear;
 }
 
-/* portrair */
-.portrait {
-    padding: 1em;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 250ms linear;
+.btn img {
 }
 
-.js-btn-move {
-    max-height: 12em;
-}
+/* portrait */
 
-.btn-move {
+.btn-show-hide {
+    margin: 1em;
     padding: 1em;
     background-color: white;
     border: 2px solid #424035;
     box-shadow: 0 0 1px rgba(0,0,0,0);
-    
 }
-
 .portrait {
-    width: 100%;
+    width: 80%;
 }
 
+.photo {
+    width: 100%;
+    margin-bottom: 8em;
+}
 
+.photo-1 {
+    width: 80%;
+}
 
+.box {
+  text-align: center;
+  transition: all 250ms linear;
+  opacity: 0;
+}
+
+.js-box-show {
+    opacity: 1; 
+}
