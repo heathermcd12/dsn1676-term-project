@@ -340,10 +340,6 @@ ul {
     background-color: #f22ee8;
     transition: all 500ms linear;
 }
-
-.btn img {
-}
-
 /* portrait */
 
 .btn-show-hide {
@@ -353,6 +349,7 @@ ul {
     border: 2px solid #424035;
     box-shadow: 0 0 1px rgba(0,0,0,0);
 }
+
 .portrait {
     width: 80%;
 }
@@ -363,7 +360,7 @@ ul {
 }
 
 .photo-1 {
-    width: 80%;
+    width: 85%;
 }
 
 .box {
