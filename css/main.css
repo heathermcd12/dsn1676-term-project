@@ -300,6 +300,15 @@ ul {
 
 .js-box-show-hide {
     opacity: 0; 
+    left: 200px;
+}
+
+.aboutme {
+    text-align: center;
+}
+
+.text {
+    transition: all 250ms linear;
 }
 
 /* button */
@@ -327,5 +336,6 @@ ul {
     background-color: #f22ee8;
     transition: all 500ms linear;
 }
+
 
 
