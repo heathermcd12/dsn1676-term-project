@@ -30,3 +30,5 @@ $('.nav').localScroll();
 
 $('.button').localScroll();
 
+$('.box').localScroll();
+
