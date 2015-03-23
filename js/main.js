@@ -26,3 +26,7 @@ $btnShowHide3.on ('click', function () {
     $box3.toggleClass('js-box-show');
 });
 
+$('.nav').localScroll();
+
+$('.button').localScroll();
+
