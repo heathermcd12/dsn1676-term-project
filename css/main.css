@@ -137,6 +137,54 @@ body {
 .logo img {
     height: 2em;
 }
+.word {
+    width: 100%;
+}
+
+.st0 {
+  animation: biggify 250ms 2 alternate;
+}
+
+#letter-r {
+
+}
+
+#letter-e-1 {
+  animation-delay: 250ms;
+}
+
+#letter-d-1 {
+  animation-delay: 500ms;
+}
+
+#letter-d-2 {
+  animation-delay: 750ms;
+}
+
+#letter-h {
+  animation-delay: 250ms;
+}
+
+#letter-e-2 {
+  animation-delay: 500ms;
+}
+
+#letter-a {
+  animation-delay: 750ms;
+}
+
+#letter-d-3 {
+  animation-delay: 750ms;
+}
+
+@keyframes biggify {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 
 .section-medium {
   background-color: #e2e2e2;
