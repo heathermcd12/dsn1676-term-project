@@ -137,8 +137,10 @@ body {
 .logo img {
     height: 2em;
 }
+
 .word {
     width: 100%;
+    margin-left: 5vh;
 }
 
 .st0 {
@@ -346,7 +348,8 @@ ul {
 /* About ME */
 
 .panel {
-    margin: 2em;
+    margin-left: 2em;
+    margin-right:2em;
     margin-bottom: 0;
     padding: .75em;
     max-height: 0;
