@@ -1,6 +1,9 @@
 var $btnExpand = $('.btn-expand');
 var $panel = $('.panel');
 
+var $btnHover = $('.btn-hover');
+var $button = $('.button');
+
 var $btnShowHide1 = $('.btn-show-hide-1');
 var $box1 = $('.box-1');
 
@@ -9,6 +12,10 @@ var $box2 = $('.box-2');
 
 var $btnShowHide3 = $('.btn-show-hide-3');
 var $box3 = $('.box-3');
+
+$btnHover.on ('click', function () {
+    $panel.toggleClass('js-button-hide');
+});
 
 $btnExpand.on ('click', function () {
     $panel.toggleClass('js-panel-expand');

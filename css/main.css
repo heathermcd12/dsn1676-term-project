@@ -77,6 +77,10 @@ a:focus {
     outline: 3px solid #000;
 }
 
+a:active {
+    outline: 0;
+}
+
 .skip-links {
     margin: 0;
     padding: 0;
@@ -145,6 +149,7 @@ body {
 
 .st0 {
   animation: biggify 250ms 2 alternate;
+  -webkit-animation: biggify 250ms 2 alternate;
 }
 
 #letter-r {
@@ -153,38 +158,54 @@ body {
 
 #letter-e-1 {
   animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
 }
 
 #letter-d-1 {
   animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
 }
 
 #letter-d-2 {
   animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
 }
 
 #letter-h {
-  animation-delay: 250ms;
+  animation-delay: 0ms;
+  -webkit-animation-delay: 0ms;
 }
 
 #letter-e-2 {
-  animation-delay: 500ms;
+  animation-delay: 250ms;
+  -webkit-animation-delay: 250ms
 }
 
 #letter-a {
-  animation-delay: 750ms;
+  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
 }
 
 #letter-d-3 {
   animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
 }
 
 @keyframes biggify {
   0% {
-    transform: scale(1);
+    transform: translateY(0);
   }
   100% {
-    transform: scale(1.1);
+    transform: translateY(-20px);
+  }
+}
+
+@-webkit-keyframes biggify {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
 
@@ -223,11 +244,23 @@ ul {
     opacity: 0;
     -webkit-animation: fox 2s linear forwards;
     animation: title 2s linear forwards;
+    -webkit-transition: all .25s;
     transition: all .25s;
+    
 }
 
 
 @keyframes title {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes title {
     0% {
         opacity: 0;
     }
@@ -319,6 +352,7 @@ ul {
     -webkit-animation: fox 2s linear forwards;
     animation: fox 2s linear forwards;
     transition: all .25s steps(2);
+    -webkit-transition: all .25s steps(2);
 }
 
 .fox:hover{
@@ -355,6 +389,7 @@ ul {
     max-height: 0;
     overflow: hidden;
     transition: all 250ms linear;
+    -webkit-transition: all 250ms linear;
 }
 
 .js-panel-expand {
@@ -390,6 +425,7 @@ ul {
     color: black;
     background-color: #f22ee8;
     transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
 }
 /* portrait */
 
@@ -417,6 +453,7 @@ ul {
 .box {
   text-align: center;
   transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
   opacity: 0;
 }
 
