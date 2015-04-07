@@ -39,3 +39,9 @@ $('.button').localScroll();
 
 $('.box').localScroll();
 
+var $motion = $('.motion');
+var $btn = $('.btn');
+$motion.waypoint (function () {
+    $btn.addClass('js-btn-show');
+},{offset:"50%"});
+

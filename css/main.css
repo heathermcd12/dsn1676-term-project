@@ -144,7 +144,6 @@ body {
 
 .word {
     width: 100%;
-    margin-left: 5vh;
 }
 
 .st0 {
@@ -191,7 +190,7 @@ body {
   -webkit-animation-delay: 750ms;
 }
 
-@keyframes biggify {
+@-webkit-keyframes biggify {
   0% {
     transform: translateY(0);
   }
@@ -200,7 +199,7 @@ body {
   }
 }
 
-@-webkit-keyframes biggify {
+@keyframes biggify {
   0% {
     transform: translateY(0);
   }
@@ -239,7 +238,7 @@ ul {
 .logo {
 
     display: block;
-    max-width: 350px;
+    max-width: 320px;
     margin: -2rem auto 0;
     opacity: 0;
     -webkit-animation: fox 2s linear forwards;
@@ -272,9 +271,12 @@ ul {
 
 @media only screen and (min-width: 35em) {
 
-    
+    html {
+        font-size: 80%;
+    }
+        
     .logo {
-        max-width: 420px; 
+        max-width: 300px; 
     }
     
     .nav-top {
@@ -351,8 +353,9 @@ ul {
     opacity: 0;
     -webkit-animation: fox 2s linear forwards;
     animation: fox 2s linear forwards;
-    transition: all .25s steps(2);
     -webkit-transition: all .25s steps(2);
+    transition: all .25s steps(2);
+    
 }
 
 .fox:hover{
@@ -414,11 +417,19 @@ ul {
 }
 
 .btn {
+    position: relative;
     border-radius: 50% 50%;
     margin: 0;
     width: 100px;
     height: 100px;
-    display:inline-block;
+    display:inline-block
+    transition: all 1s linear;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.js-btn-show {
+    opacity: 1;
 }
 
 .btn:hover {
@@ -427,6 +438,8 @@ ul {
     transition: all 500ms linear;
     -webkit-transition: all 500ms linear;
 }
+
+
 /* portrait */
 
 .btn-show-hide {
