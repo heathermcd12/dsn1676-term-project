@@ -186,16 +186,16 @@ body {
 }
 
 #letter-d-3 {
-  animation-delay: 750ms;
   -webkit-animation-delay: 750ms;
+  animation-delay: 750ms;
 }
 
 @-webkit-keyframes biggify {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
   100% {
-    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
   }
 }
 
