@@ -362,6 +362,10 @@ ul {
     background-position: center bottom;
 }
 
+.fox:click{
+    background-position: center bottom;
+}
+
 @keyframes fox { 
     0% {
         opacity: 0;
