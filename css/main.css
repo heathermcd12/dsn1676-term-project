@@ -144,6 +144,8 @@ body {
 
 .word {
     width: 100%;
+    margin-left: .5em;
+    margin-right: 2em;
 }
 
 .st0 {
@@ -212,6 +214,11 @@ body {
   background-color: #e2e2e2;
 }
 
+.section {
+    overflow: hidden;
+    margin-bottom: -5em;
+}
+
 ul {
     list-style-type: none;
 } 
@@ -276,12 +283,13 @@ ul {
     }
         
     .logo {
-        max-width: 300px; 
+        max-width: 240px; 
     }
     
     .nav-top {
         text-align: right;
         padding-right: 1em;
+        width: 
     }
 
 }
@@ -293,7 +301,7 @@ ul {
     }
     
     .logo {
-        max-width: 500px; 
+        max-width: 360px; 
     }
     
     .nav-top {
@@ -458,6 +466,12 @@ ul {
     width: 80%;
 }
 
+.portfolio {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
 .photo {
     width: 100%;
     margin-bottom: 8em;
@@ -476,4 +490,10 @@ ul {
 
 .js-box-show {
     opacity: 1; 
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 10em;
+    
 }
