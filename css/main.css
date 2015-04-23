@@ -220,7 +220,7 @@ body {
 
 .section {
     overflow: hidden;
-    margin-bottom: -5em;
+    margin-bottom: .5em;
 }
 
 ul {
@@ -467,23 +467,24 @@ ul {
 }
 
 .portrait {
-    width: 80%;
+    width: 250px;
     padding-bottom: 1em;
 }
 
 .portfolio {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin-bottom: 5em;
+    padding-bottom: ;
     overflow: hidden;
 }
 
 .photo {
-    width: 100%;
+    padding-top: 1em;
+    width: 250px;
     margin-bottom: 8em;
 }
 
 .photo-1 {
-    width: 85%;
+    width: 250px;
 }
 
 .box {
